@@ -88,7 +88,7 @@
 @media (max-width:767px) {
     .navbar {
         justify-content: space-between; /* Adjust layout to accommodate ham icon */
-        padding: 0 3rem; /* Add some padding to the sides */
+        padding: 0 2rem; /* Add some padding to the sides */
     }
     .nav-menu {
         display: none; /* Hide menu on small screens */
