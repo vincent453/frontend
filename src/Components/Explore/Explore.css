@@ -3,7 +3,8 @@
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    height: 50rem;
+    height: auto;
+    min-height: 49rem;
     filter: brightness(0.8);
 }
 
@@ -89,9 +90,6 @@
 }
 
 @media (max-width:1024px) {
-    .explore{
-        height: 100vh;
-    }
     .left-right{
         justify-content: space-around;
         column-gap: 10rem;
@@ -185,6 +183,7 @@
         margin-bottom: 1rem; /* Adds space after the text */
         word-break: break-word; /* Ensures long words wrap */
         font-weight: 400;
+        
     }
 
     /* Move section */
@@ -205,9 +204,9 @@
         font-size: 2.4rem; /* Adjust font size for very narrow screens */
         width: 90%; /* Allows full width but prevents wrapping */
     }
-    .explore{
-        height: 110vh;
-    }
 
+    .text-button{
+        margin-top: 5rem;
+    }
     
 }
