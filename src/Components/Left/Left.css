@@ -26,3 +26,8 @@
     }
     
 }
+@media(max-width:767px) {
+.left-right{
+    top: 3rem;
+}
+}
