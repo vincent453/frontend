@@ -195,6 +195,7 @@
     }
 }
 @media (max-width: 610px) {
+  
     .main-text {
         width: auto; /* Keeps width limited */
         width: 90%; 
@@ -205,7 +206,7 @@
         width: 90%; /* Allows full width but prevents wrapping */
     }
     .explore{
-        height: 130vh;
+        height: 110vh;
     }
 
     
