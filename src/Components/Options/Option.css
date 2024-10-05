@@ -1,0 +1,35 @@
+.options{
+    position: relative;
+    top: 12rem;
+    width: 20rem;
+}
+.outline-circle{
+    width: 4rem;
+    height: 4rem;
+    background-color: transparent;
+    border: #fff 1px solid;
+    border-radius: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.outline-circle img{
+    width:2rem;
+}
+.text-box{
+    width: 20rem;
+}
+.text-box h2{
+    color: #fff;
+    font-weight: 400;
+    font-size: 1.9rem;
+    line-height: 1.3;
+}
+.text-box p{
+    color: #fff;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 1.5;
+    color: #d9d8cc;
+}

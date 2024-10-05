@@ -1,0 +1,52 @@
+.choose{
+    width: 100%;
+    height: 130vh;
+    background-color: #121a1f;
+    
+    
+}
+.all{
+    display: flex;
+    justify-content: space-around;
+    gap: 13rem;
+    align-items: end;
+    position: relative;
+    top: 8rem;
+  
+    
+  
+}
+.home h2{
+    color: #e8f534;
+    font-size: 15px
+}
+
+.home img{
+    filter: invert(8%) sepia(61%) saturate(572%) hue-rotate(4deg) brightness(97%) contrast(98%);
+}
+
+.why-home h1{
+    font-size: 3.4rem;
+    font-weight: 400;
+    width: 40rem;
+    color: #ffff;
+}
+.button-div{
+    display: flex;
+    position: relative;
+    top: -2.5rem;
+}
+.three-places{
+    display: flex;
+    justify-content: space-around;
+}
+.three-container hr{
+    width: 97%;
+    position: relative;
+    top: 15rem;
+    display: flex;
+
+}
+.line{
+    padding-left: 3.3rem;
+}

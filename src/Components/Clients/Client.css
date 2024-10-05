@@ -1,0 +1,103 @@
+.client{
+    width: 100%;
+    height: 122vh;
+    background-color: #121a1f;
+}
+.client-bg img{
+height: 20%;
+}
+.percent-client{
+    display: flex;
+    justify-content: space-around;
+   position: relative;
+   top: 5rem;
+   
+}
+.home h2{
+    color: #e8f534;
+    font-size: 15px
+}
+
+.home img{
+    filter: invert(8%) sepia(61%) saturate(572%) hue-rotate(4deg) brightness(97%) contrast(98%);
+}
+.percet-text {
+    display: flex;
+    flex-direction: column; /* This ensures h1 and p stack on top of each other */
+    flex-wrap: wrap; /* Allows items to wrap */
+    white-space: normal; /* Ensures text wraps normally */
+}
+.percet-text h1{
+    font-size: 3.4rem;
+    font-weight: 400;
+    width: 30rem;
+    color: #ffff;
+}
+
+.percet-text p{
+    color: #ffff;
+    width: 25rem;
+    font-weight: 300;
+    line-height: 1.5;
+    font-size: 16px;
+    padding-bottom: 1rem;
+    color: #d9d8cc;
+}
+.number-client{
+    position: relative;
+    top: -38rem;
+    right: -4rem;
+    width: 50%;
+    
+}
+.number-client h1{
+    color: #fff;
+    font-weight: 300;
+    font-size: 3.2rem;
+    line-height: 0.1;
+}
+
+.number-client h2{
+    color: #ffff;
+    font-size: 19px;
+    font-weight: 300;
+}
+
+@media(max-width: 1230px){
+    .percent-client{
+        justify-content: space-between;
+    }
+}
+@media (max-width:1024px){
+    .client{
+        height: 230vh;
+    }
+    .percent-client{
+        flex-direction: column;
+        width: 90%;
+        left: 5%;
+        flex-wrap: wrap;
+    
+    }
+    .number-client h1{
+        font-size: 34px;
+        white-space: wrap;
+        
+    }
+    .number-client h2{
+        font-size: 14px;
+    }
+ 
+}
+
+@media (max-width:600px){
+    body{
+        overflow-x: hidden;
+    }
+    .percet-text h1{
+        width: 100%;
+    }
+    .percet-text p{
+        width: 100%;
+    }
+}

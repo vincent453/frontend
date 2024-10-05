@@ -1,0 +1,41 @@
+.button button{
+    width: 13em;
+    height: 4.2rem;
+    display: flex;
+    gap: 20px;
+    background: #e8f534;
+    border: none;
+    outline: none;
+    color: #121a1fc5;
+    font-weight: 600;
+    font-size: 16px;
+    align-items: center;
+    justify-content: center;
+}
+
+.button button img{
+    display: flex;
+    width: 1rem;    
+
+}
+
+.button button:hover{
+    background-color: #121A1F;
+    color: #e8f534;
+}
+
+button img {
+    transition: filter 0.3s ease;
+  }
+  
+  button:hover img {
+    filter: invert(85%) sepia(55%) saturate(619%) hue-rotate(12deg) brightness(112%) contrast(92%);
+  }
+
+
+@media (max-width:1024px) {
+    .custom-class {
+    display: none !important;
+    
+}
+}

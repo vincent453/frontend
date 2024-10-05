@@ -1,0 +1,101 @@
+.navbar{
+    display: flex;
+    justify-content: space-around;
+    padding: 0px;
+    box-shadow: 0 1px 3px -2px black;
+    align-items: center;
+    background: #121A1F;
+}
+
+.nav-logo{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+
+}
+
+.nav-logo h2{
+    color: #ffff;
+    font-size: 30px;
+    font-weight: 400;
+}
+
+.nav-logo h2 span{
+    font-size: 20px;
+    display: block;
+    color: #e8f534;
+}
+.nav-menu{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 30px;
+    color: #ffff;
+    font-size: 16px;
+    font-weight: 500;
+}
+.nav-menu li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3px;
+    cursor: pointer;
+    color: #ffff;
+}
+
+
+.nav-menu .differ{
+    color: #e8f534;
+}
+
+.ham{
+    display: none;
+}
+
+@media (max-width:1230px) {
+    .navbar {
+        justify-content: space-around; /* More control over logo and menu */
+    }
+    .nav-logo h2 {
+        font-size: 40px;
+    }
+    .nav-menu {
+        font-size: 20px;
+    }
+}
+
+@media (max-width:1024px) {
+    .navbar {
+        justify-content: space-between;
+    }
+    .nav-menu {
+        font-size: 15px;
+    }
+}
+
+@media (max-width:800px) {
+    .nav-logo {
+        position: relative;
+    }
+    .nav-menu {
+        font-size: 17px;
+        justify-content: space-around;
+    }
+}
+
+@media (max-width:767px) {
+    .navbar {
+        justify-content: space-between; /* Adjust layout to accommodate ham icon */
+        padding: 0 1rem; /* Add some padding to the sides */
+    }
+    .nav-menu {
+        display: none; /* Hide menu on small screens */
+    }
+    .ham {
+        width: 1.6rem;
+        display: flex; /* Show hamburger icon */
+        justify-content: flex-end;
+        align-items: center;
+    }
+}

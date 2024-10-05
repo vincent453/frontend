@@ -1,0 +1,231 @@
+.explore{
+    background-image: url('../Assets/home-bg.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 50rem;
+    filter: brightness(0.8);
+}
+.left-right{
+    display: flex;
+    justify-content: space-around;
+    column-gap: 23rem;
+    position: relative;
+    top: 6rem;
+}
+.left{
+    color: #fff;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.left img{
+    width: 1.3rem;
+    height: 1.3rem;
+}
+.left h2{
+    font-size: 15px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+.right{
+    color: #fff;
+    display:flex;
+    gap: 30px;
+    align-items: first baseline;
+
+}
+.right .best{
+    display: flex;
+    position: relative;
+    width: 10rem;
+    font-size: 16px;
+    text-transform: capitalize;
+    font-weight: 500;
+    top: -5px;
+    color: #ffffff;
+ 
+}
+.right .date{
+    font-size: 20px;
+}
+.right img{
+    width: 3rem;
+    height: 1rem;
+}
+
+.main-text{
+    display: flex;
+    position: relative;
+    width: 51rem;
+    left: 13rem;
+    flex-shrink: 2;
+    top: 12rem;
+    
+}
+.main-text h1{
+    text-transform: capitalize;
+    font-size: 3.5rem;
+    font-weight: 400;
+    color: #ffffff;
+
+}
+
+.text-button{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    top: 16rem;
+}
+
+.text{
+    width: 40rem;
+    color: #d9d8cc;
+    font-size: 16px;
+    line-height: 1.5;
+    font-weight: 300;
+}
+
+@media (max-width:1230px) { 
+    .text-button{
+        justify-content: space-between;
+    }
+    .left-right{
+        justify-content: space-between
+    }
+    .left h2{
+        font-size: 17px;
+    }
+    .right .best{
+        width: 10rem;
+        font-size: 18px;
+    }
+    .right .date{
+        font-size: 24px;
+    }
+    .main-text{
+        left: 7rem;
+    }
+}
+
+@media (max-width:1024px) {
+    .explore{
+        height: 100vh;
+    }
+    .left-right{
+        justify-content: space-around;
+        column-gap: 10rem;
+        top: 2rem;
+    }
+    .left h2{
+        font-size: 14px;
+        
+    }
+    .left img{
+        width: 15px;
+        height: 15px;
+    }
+    .right .best{
+        width: 9rem;
+        font-size: 15px;
+    }
+    .right .date{
+        font-size: 18px;
+    }
+    .main-text{
+        top: 100px;
+        width: 35rem;
+    
+        
+       
+}
+    .main-text h1{
+        font-size: 39px;
+        width: 40rem;
+        height: 0rem;
+         display: flex;
+        flex-wrap: wrap;
+
+    }
+    .text{
+        font-size: 14px;
+        width: 30rem;
+        font-weight: 100;
+        line-height: 1.5;
+        display: flex;
+        flex-wrap: nowrap;
+        
+      
+    }
+}
+
+@media (max-width:800px) { 
+    .main-text {
+        display: flex;
+        flex-wrap: wrap; /* Enables flex wrapping */
+        justify-content: flex-start;
+        left: 1rem;
+        position: relative; /* Relative positioning for better control */
+        width: 90%; /* Ensures the width spans the available container */
+        margin-bottom: 1rem; /* Adds some space below */
+    }
+
+    .main-text h1 {
+        font-size: 50px; /* Adjusts the size for mobile */
+        text-align: left; /* Left aligns the text */
+        flex: 1 1 100%; /* Ensures it takes full width */
+    }
+
+    /* Left-right section */
+    .left-right {
+        display: flex;
+        flex-direction: column; /* Stacks elements vertically */
+        position: relative; /* Remove absolute positioning */
+        margin-bottom: -2rem; /* Adds spacing between sections */
+        width: 90%;
+    }
+
+    /* Text and button container */
+    .text-button {
+        display: flex;
+        flex-direction: column; /* Stacks the text and button vertically */
+        align-items: flex-start; /* Aligns content to the left */
+        width: 100%;
+        margin-top: 1rem;
+        position: relative; /* Remove absolute positioning */
+    }
+
+    /* Paragraph text */
+    .text {
+        display: flex;
+        flex-wrap: wrap; /* Ensures text wrapping */
+        font-size: 14px;
+        line-height: 1.5;
+        width: 100%; /* Full width */
+        margin-bottom: 1rem; /* Adds space after the text */
+        word-break: break-word; /* Ensures long words wrap */
+    }
+
+    /* Move section */
+    .move {
+        margin-left: 1rem;
+        width: 90%;
+    }
+}
+@media (max-width: 610px) {
+    .main-text {
+        width: auto; /* Keeps width limited */
+        max-width: 90%; 
+    }
+
+    .main-text h1 {
+        font-size: 2rem; /* Adjust font size for very narrow screens */
+        max-width: 90%; /* Allows full width but prevents wrapping */
+    }
+    .explore{
+        height: 130vh;
+    }
+
+    
+}
